@@ -21,12 +21,11 @@ def run(playwright):
     page.fill('input[name="email"]', test_data.data_email)
     page.fill('input[name="password"]', test_data.data_password)
     page.click('input[type="checkbox"]')
+
     # Отправка формы
-    expect(page.locator(['button_sign_up'])).to_be_visible()
+    expect(page.locator(['button_LOGIN'])).to_be_visible()
     page.click('button[type="is-primary"]')
 
-    # Добавьте проверки, если необходимо
-    # Например, проверка на успешное завершение регистрации
 
     browser.close()
 

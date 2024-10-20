@@ -6,3 +6,4 @@ LOCATORS = {
     'checkbox_agree': 'input#agree',
     'button_sign_up': 'button:text("Sign Up")'
 }
+
