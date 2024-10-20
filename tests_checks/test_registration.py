@@ -57,7 +57,7 @@ def test_registration(browser):
     expect(page.locator('button.is-primary')).to_be_visible()
 
     # Отправка формы
-    page.click('button.is-primary:has-text("LOGIN")')
+    page.click('button.is-primary:has-text("Sign Up")')
 
     # Проверка на успешное завершение регистрации
     print("Waiting for 'You have logged in Jaine White' message...")

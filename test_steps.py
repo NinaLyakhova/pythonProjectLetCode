@@ -23,9 +23,11 @@ def run(playwright):
     page.click('input[type="checkbox"]')
 
     # Отправка формы
-    expect(page.locator(['button_LOGIN'])).to_be_visible()
-    page.click('button[type="is-primary"]')
+    expect(page.locator('button:has-text("Sign Up")')).to_be_visible()
+    page.click('button:has-text("Sign Up")')
 
+    expect(page.locator('button:has-text("LOGIN")')).to_be_visible()
+    page.click('button:has-text("LOGIN")')
 
     browser.close()
 
